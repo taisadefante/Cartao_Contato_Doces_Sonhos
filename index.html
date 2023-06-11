@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartao Janaina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./imagem/logo.PNG" alt="Minha Imagem">
+            <p>Janaina Lisboa</p><br>
+
+        </header>
+
+        <main class="links-container">
+            <div class="links">
+                <a href="https://www.instagram.com/ateliejanainalisboa/" target="_blank">Instagran</a>
+                <a href="" target="_blank">Meu Portfolio</a>
+                <a href="" target="_blank">LinkedIn</a>
+                <button class="modal-active">Contato</button>
+            </div>
+                        
+        </main>
+       
+        <!--footer-->
+        <footer>
+            <span>Copyright © 2023 Tais Defante . Todos os direitos reservados.</span>
+            <br/>
+            <span>Contato: taisadefante@hotmail.com</span>
+        </footer>
+    
+
+        <!--Container Contato-->
+    <div id="modal-contact" class="modal-container">
+        <div class="modal">
+            <button class="close-button">X</button>
+            <h2 class="subtitle">Entre em contato</h2>
+            <form action="https://formsubmit.co/taisadefante@hotmail.com" method="POST">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required placeholder="Digite seu nome" autocomplete="off">
+                    <br>
+                    <br>
+                    <label for="email">Email</label> 
+                    <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                    <br>
+                    <br>
+                    <label for="msg">Mensagem</label><br>
+                    <textarea name="msg" id="msg" cols="30" rows="5" required placeholder="Me mande uma mensagem"></textarea><br><br>
+                   
+                    <input type="hidden" name="_captcha" value="false"/>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html"/>
+
+                    <button></button><input type="submit" value="Enviar" class="button"></button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
